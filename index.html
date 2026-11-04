@@ -198,6 +198,8 @@
   @media(prefers-color-scheme:dark){.rr{background:#1f2937;color:#f9fafb}}
   .rr b{font-size:14px}.rr span{font-size:12px;font-weight:700}
   .status-await{background:#fef3c7;color:#92400e;padding:5px 8px;border-radius:999px;white-space:nowrap}
+  .status-called{background:#dbe7f7;color:#173a73;padding:5px 8px;border-radius:999px;white-space:nowrap}
+  @media(prefers-color-scheme:dark){.status-called{background:#1e3358;color:#a8c6ff}}
   footer{padding:28px 0 36px;color:var(--muted);font-size:12.5px;line-height:1.6}
   .note{background:var(--gold-bg);border:1px solid var(--line2);border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.55;margin-top:14px}
   @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -207,8 +209,8 @@
 <div class="topbar"><div class="wrap topbar-inner">
   <div class="kicker">2026 Midterms <span>•</span> Election Prediction</div>
   <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-    <span class="live-dot"><span class="dot"></span> Snapshot: Tue, Nov 3, 2026 • Updated 12:15 p.m. CST</span>
-    <span class="date-note">Election Day: Tue, Nov 3 • Results update every 30 min</span>
+    <span class="live-dot"><span class="dot"></span> Snapshot: Tue, Nov 3, 2026 • Updated ~4:15 p.m. CST</span>
+    <span class="date-note">Election Day • Voting underway nationwide • Forecasts final — results added tonight as races are called</span>
   </div>
 </div></div>
 
@@ -303,14 +305,19 @@
   <section id="results">
     <div class="results">
       <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:flex-start">
-        <div><div class="kicker" style="color:#f5c542">Election Day • Tuesday, Nov 3</div><h2 style="font-family:'Newsreader',serif;font-size:32px;margin:6px 0 6px;line-height:1">Results — updated every 30 minutes</h2><p style="color:#d1d5db;margin:0;max-width:620px;font-size:14.5px;line-height:1.6">On Nov 3 this section becomes the live scoreboard. First polls close 6:00 p.m. ET (5:00 p.m. Pensacola). New totals will be posted here every 30 minutes through the night — House and Senate called seats, plus the 7 battleground Senate races.</p></div>
-        <div style="text-align:right"><span class="update-pill">● Next update in <span id="nextUpdate">30:00</span></span><div style="font-size:12px;color:#9ca3af;margin-top:8px">Last snapshot: Tue, Nov 3, 12:15 p.m. CST • Voting is underway — no chamber called yet</div></div>
+        <div><div class="kicker" style="color:#f5c542">Election Day • Tuesday, Nov 3</div><h2 style="font-family:'Newsreader',serif;font-size:32px;margin:6px 0 6px;line-height:1">Results — final scheduled update</h2><p style="color:#d1d5db;margin:0;max-width:620px;font-size:14.5px;line-height:1.6">This is the final scheduled update of the night. Decision Desk HQ now projects Democrats to win control of <strong style="color:#fff">both chambers</strong> — the House and the Senate. The seat tallies below are <strong style="color:#fff">called-so-far totals, not final seat totals</strong>: 107 House seats and 9 Senate seats remain uncalled, so the called counts will still change as the remaining races are decided.</p></div>
+        <div style="text-align:right"><span class="update-pill">● Final scheduled update</span><div style="font-size:12px;color:#9ca3af;margin-top:8px">Last snapshot: Tue, Nov 3, ~10:46 p.m. CST (≈11:46 p.m. EST) • DDHQ projects Democrats to win control of both the U.S. House (#DecisionMade Nov 3, 2026, 9:09 p.m. EST) and the U.S. Senate (#DecisionMade Nov 3, 2026, 11:19 p.m. EST). Control of both chambers is now decided, but the seat tallies are called-so-far and not final — 107 House seats and 9 Senate seats remain uncalled. All forecasts shown are final, per Decision Desk HQ.</div></div>
       </div>
       <div class="results-grid">
-        <div class="result-card"><h3>House — Called seats</h3><div class="result-score">0 — 0</div><div style="color:#d1d5db;font-size:13px">Dem — Rep • 218 to win • <b style="color:#fff">Not yet called — voting underway</b></div><div class="result-bar"><i style="width:50%;background:#6ea8fe;display:block"></i></div><div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#9ca3af"><span>FORECAST: D 233</span><span>FORECAST: R 202</span></div></div>
-        <div class="result-card"><h3>Senate — Called seats</h3><div class="result-score">47 — 53*</div><div style="color:#d1d5db;font-size:13px">Current before election • 51 to win • <b style="color:#fff">No races called yet</b></div><div class="result-bar"><i style="width:50%;background:#6ea8fe;display:block"></i><i style="width:50%;background:#f87171;display:block"></i></div><div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#9ca3af"><span>FORECAST: D 50–52</span><span>*CURRENT R MAJORITY</span></div></div>
+        <div class="result-card"><h3>House — Called seats</h3><div class="result-score">211 — 117</div><div style="color:#d1d5db;font-size:13px">Dem — Rep • 328 of 435 seats called (107 not yet called) • 218 to win • Democrats +21 seats / Republicans −21 • <b style="color:#fff">DDHQ projects Democrats to win control of the U.S. House</b> — #DecisionMade Nov 3, 2026, 9:09 p.m. EST. This is a projection, not a called-seat majority: 211 called Democratic seats is below the 218 needed, and these are called-so-far totals, not final seat totals • Per Decision Desk HQ</div><div class="result-bar"><i style="width:64%;background:#6ea8fe;display:block"></i><i style="width:36%;background:#f87171;display:block"></i></div><div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#9ca3af"><span>FORECAST: D 233</span><span>FORECAST: R 202</span></div></div>
+        <div class="result-card"><h3>Senate — Called seats</h3><div class="result-score">51 — 40</div><div style="color:#d1d5db;font-size:13px">Dem — Rep • 91 of 100 seats called (9 not yet called) • Dem: 34 held + 17 won, including 6 flipped • Rep: 31 held + 9 won • Democrats +6 seats / Republicans −6 • 51 to win • <b style="color:#fff">DDHQ projects Democrats to win control of the U.S. Senate</b> — #DecisionMade Nov 3, 2026, 11:19 p.m. EST, with Democrats at 51 called seats. These are called-so-far totals, not final seat totals • Per Decision Desk HQ</div><div class="result-bar"><i style="width:51%;background:#6ea8fe;display:block"></i><i style="width:40%;background:#f87171;display:block"></i></div><div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#9ca3af"><span>FORECAST: D 50–52</span><span>9 SEATS NOT YET CALLED</span></div></div>
       </div>
       <div class="race-results">
+        <div class="rr"><div><b>Virginia Senate</b><br><span style="color:var(--muted)">Mark Warner (D) holds • Called 7:00 p.m. ET</span></div><span class="status-called">Called — D hold</span></div>
+        <div class="rr"><div><b>Georgia Senate</b><br><span style="color:var(--muted)">Jon Ossoff (D) holds • Called 7:18 p.m. ET</span></div><span class="status-called">Called — D hold</span></div>
+        <div class="rr"><div><b>West Virginia Senate</b><br><span style="color:var(--muted)">Shelley Moore Capito (R) holds</span></div><span class="status-called">Called — R hold</span></div>
+        <div class="rr"><div><b>Florida Senate</b><br><span style="color:var(--muted)">Moody (R) holds</span></div><span class="status-called">Called — R hold</span></div>
+        <div class="rr"><div><b>New Hampshire Senate</b><br><span style="color:var(--muted)">Pappas (D) holds</span></div><span class="status-called">Called — D hold</span></div>
         <div class="rr"><div><b>Ohio Senate</b><br><span style="color:var(--muted)">Forecast D 65% • Closes 7:30p ET</span></div><span class="status-await">Awaiting Nov 3</span></div>
         <div class="rr"><div><b>North Carolina Senate</b><br><span style="color:var(--muted)">Forecast 50% • Closes 7:30p ET</span></div><span class="status-await">Awaiting Nov 3</span></div>
         <div class="rr"><div><b>Maine Senate</b><br><span style="color:var(--muted)">Forecast D 56% • Closes 8:00p ET</span></div><span class="status-await">Awaiting Nov 3</span></div>
@@ -318,7 +325,7 @@
         <div class="rr"><div><b>Texas Senate</b><br><span style="color:var(--muted)">Forecast R 60% • Closes 9:00p ET</span></div><span class="status-await">Awaiting Nov 3</span></div>
         <div class="rr"><div><b>Alaska + Kansas Senate</b><br><span style="color:var(--muted)">AK D 62% • KS R 68% • AK counts late</span></div><span class="status-await">Awaiting Nov 3</span></div>
       </div>
-      <p style="font-size:12.5px;color:#9ca3af;margin:14px 0 0;line-height:1.6">How updates work: Check back every 30 minutes on Nov 3 — this page is re-published with the latest AP / Decision Desk HQ calls on that cycle. Between updates, the last posted totals stay shown with their timestamp. Alaska may remain “counting” into Nov 4 and will be marked pending, not guessed.</p>
+      <p style="font-size:12.5px;color:#9ca3af;margin:14px 0 0;line-height:1.6">Final scheduled update: control of both chambers is now decided — DDHQ projects Democrats to win both the House and the Senate. The seat tallies above are called-so-far and are <b style="color:#e5e7eb">not final seat totals</b>: 107 House seats and 9 Senate seats remain uncalled, and the called counts will still change as those races are decided. Your frozen model gets graded Wed, Nov 4 — pending races marked pending, not guessed.</p>
     </div>
   </section>
 
@@ -416,7 +423,7 @@
   </section>
 
   <footer>
-    Forecast snapshot: Tuesday, Nov 3, 2026, updated 12:15 p.m. CST — voting is underway and no chamber has been called yet. On Tuesday, Nov 3, the Results section above is re-published every 30 minutes with the latest called seats for House and Senate (AP News / Decision Desk HQ calls), starting after first polls close at 6:00 p.m. ET. Between updates the last timestamped totals remain shown. Grading of your model follows Wednesday, Nov 4, chamber by chamber and race by race — Alaska marked pending if still counting.
+    Forecast snapshot: Tuesday, Nov 3, 2026, last updated ~4:15 p.m. CST — voting is underway nationwide and no chamber has been called yet. First polls close at 5:00 p.m. CT (Indiana and Kentucky); Florida Panhandle polls close at 7:00 p.m. CT. All forecasts shown are final — results will be added tonight as races are called. On Tuesday, Nov 3, the Results section above is re-published every 30 minutes with the latest called seats for House and Senate (AP News / Decision Desk HQ calls), starting after first polls close at 6:00 p.m. ET. Between updates the last timestamped totals remain shown. Grading of your model follows Wednesday, Nov 4, chamber by chamber and race by race — Alaska marked pending if still counting.
   </footer>
 </main>
 
